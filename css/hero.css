@@ -201,7 +201,7 @@
   overflow: hidden;
   box-shadow: var(--shadow-xl);
   width: 40% !important;    
-  height: 40%
+  height: 40% !important;
 }
 
 .hero-svg {
