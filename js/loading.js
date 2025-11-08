@@ -6,12 +6,12 @@
 const Loader = (() => {
   // Greetings in different languages
   const greetings = [
-    { text: 'Hello', lang: 'English', duration: 150 },
-    { text: 'Bonjour', lang: 'Spanish', duration: 100 },
-    { text: 'こんにちは', lang: 'French', duration: 100 },
-    { text: '你好', lang: 'Mandarin', duration: 100 },
-    { text: 'Hola', lang: 'Japanese', duration: 100 },
-    { text: 'नमस्कार', lang: 'Hindi', duration: 200 }
+    { text: 'Hello', lang: 'English', duration: 200 },
+    { text: 'Bonjour', lang: 'Spanish', duration: 150 },
+    { text: 'こんにちは', lang: 'French', duration: 150 },
+    { text: '你好', lang: 'Mandarin', duration: 150 },
+    { text: 'Hola', lang: 'Japanese', duration: 150 },
+    { text: 'नमस्कार', lang: 'Hindi', duration: 250 }
   ];
 
   let currentIndex = 0;
@@ -43,7 +43,7 @@ const Loader = (() => {
         currentIndex++;
         
         // Wait for fade-out, then show next greeting
-        setTimeout(showGreeting, 300);
+        setTimeout(showGreeting, 10);
       }, greeting.duration);
     }
   };
