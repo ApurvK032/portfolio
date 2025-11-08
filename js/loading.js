@@ -11,6 +11,7 @@ const Loader = (() => {
     { text: 'こんにちは', lang: 'French', duration: 200 },
     { text: '你好', lang: 'Mandarin', duration: 200 },
     { text: 'Hola', lang: 'Japanese', duration: 200 },
+    { text: 'Ciao', lang: 'Italian', duration: 200 },
     { text: 'नमस्कार', lang: 'Hindi', duration: 400 }
   ];
 
