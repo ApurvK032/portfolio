@@ -26,7 +26,7 @@ const Loader = (() => {
   const showGreeting = () => {
     if (currentIndex >= greetings.length) {
       // All greetings shown - hide loader
-      hideLoader();
+      completeLoading();
       return;
     }
 
@@ -39,7 +39,7 @@ const Loader = (() => {
       
       // After duration, fade out and show next
       setTimeout(() => {
-        greetingElement.style.opacity = 'none';
+        greetingElement.style.opacity = '0';
         currentIndex++;
         
         // Wait for fade-out, then show next greeting
@@ -49,20 +49,29 @@ const Loader = (() => {
   };
 
   // Hide loading page and show main content
-  const hideLoader = () => {
-    const loaderContainer = document.getElementById('loader-container');
-    const mainContent = document.querySelector('main');
+  const completeLoading = () => {
+  isComplete = true;
+  console.log('✨ All greetings complete - showing main website');
+  
+  const loaderContainer = document.getElementById('loader-container');
+  const mainWrapper = loaderContainer.nextElementSibling;
+  
+  if (loaderContainer && mainWrapper) {
+    loaderContainer.style.opacity = '0';
     
-    if (loaderContainer) {
-      loaderContainer.style.opacity = '0';
-      setTimeout(() => {
-        loaderContainer.style.display = 'none';
-        if (mainContent) {
-          mainContent.style.opacity = '1';
-        }
-      }, 500);
-    }
-  };
+    setTimeout(() => {
+      loaderContainer.style.display = 'none';
+      loaderContainer.style.pointerEvents = 'none';
+      
+      mainWrapper.style.opacity = '1';
+      mainWrapper.style.pointerEvents = 'auto';
+      
+      document.body.classList.remove('loading');
+      
+      console.log('🎉 Portfolio loaded successfully!');
+    }, 600);
+  }
+};
 
   // Public API
   return {
