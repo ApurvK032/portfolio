@@ -270,27 +270,6 @@
   display: inline-block;
 }
 
-.btn-primary {
-  background: #10b981;
-  color: white;
-}
-
-.btn-primary:hover {
-  background: #059669;
-  transform: translateY(-2px);
-}
-
-.btn-secondary {
-  background: transparent;
-  color: #10b981;
-  border: 2px solid #10b981;
-}
-
-.btn-secondary:hover {
-  background: #10b981;
-  color: white;
-}
-
 
 /* Tech Stack in Hero */
 .hero-stack {
