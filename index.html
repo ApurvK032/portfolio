@@ -33,10 +33,18 @@
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/loading.css">
 </head>
 <body>
-  <!-- Navigation Header -->
-  <header id="header">
+  <!-- Loading Page with Language Greetings -->
+  <div id="loader-container">
+    <div id="greeting-text"></div>
+  </div>
+
+  <!-- Main Content (hidden initially) -->
+  <div style="opacity: 0; transition: opacity 0.5s ease-in-out;">
+    <!-- Navigation Header -->
+    <header id="header">
     <div class="container">
       <nav class="navbar">
         <div class="logo">AK</div>
@@ -423,6 +431,9 @@
       <p>&copy; <span id="year"></span> Apurv Kushwaha. Built with HTML, CSS, and JavaScript. Hosted on GitHub Pages.</p>
     </div>
   </footer>
+
+  <!-- Loading Animation -->
+  <script src="js/loading.js"></script>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
