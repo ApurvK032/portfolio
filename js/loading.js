@@ -6,7 +6,7 @@
 const Loader = (() => {
   // Greetings in different languages
   const greetings = [
-    { text: 'Hello', lang: 'English', duration: 200 },
+    { text: 'Hello', lang: 'English', duration: 250 },
     { text: 'Bonjour', lang: 'Spanish', duration: 150 },
     { text: 'こんにちは', lang: 'French', duration: 150 },
     { text: '你好', lang: 'Mandarin', duration: 150 },
