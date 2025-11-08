@@ -39,7 +39,7 @@ const Loader = (() => {
       
       // After duration, fade out and show next
       setTimeout(() => {
-        greetingElement.style.opacity = '0';
+        greetingElement.style.opacity = 'none';
         currentIndex++;
         
         // Wait for fade-out, then show next greeting
