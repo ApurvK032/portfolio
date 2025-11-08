@@ -185,7 +185,7 @@
 }
 
 .hero-image-wrapper {
-  width: 100%;
+  width: 40%;
   max-width: 400px;
   aspect-ratio: 1;
   background: linear-gradient(
@@ -201,12 +201,12 @@
   overflow: hidden;
   box-shadow: var(--shadow-xl);
   width: 40% !important;    
-  height: 4%
+  height: 40%
 }
 
 .hero-svg {
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 40%;
   filter: drop-shadow(0 10px 20px rgba(16, 185, 129, 0.1));
 }
 
