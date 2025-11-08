@@ -11,7 +11,7 @@ const Loader = (() => {
     { text: 'こんにちは', lang: 'French', duration: 150 },
     { text: '你好', lang: 'Mandarin', duration: 150 },
     { text: 'Hola', lang: 'Japanese', duration: 150 },
-    { text: 'नमस्कार', lang: 'Hindi', duration: 250 }
+    { text: 'नमस्कार', lang: 'Hindi', duration: 400 }
   ];
 
   let currentIndex = 0;
