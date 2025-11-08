@@ -6,11 +6,11 @@
 const Loader = (() => {
   // Greetings in different languages
   const greetings = [
-    { text: 'Hello', lang: 'English', duration: 250 },
-    { text: 'Bonjour', lang: 'Spanish', duration: 150 },
-    { text: 'こんにちは', lang: 'French', duration: 150 },
-    { text: '你好', lang: 'Mandarin', duration: 150 },
-    { text: 'Hola', lang: 'Japanese', duration: 150 },
+    { text: 'Hello', lang: 'English', duration: 400 },
+    { text: 'Bonjour', lang: 'Spanish', duration: 200 },
+    { text: 'こんにちは', lang: 'French', duration: 200 },
+    { text: '你好', lang: 'Mandarin', duration: 200 },
+    { text: 'Hola', lang: 'Japanese', duration: 200 },
     { text: 'नमस्कार', lang: 'Hindi', duration: 400 }
   ];
 
