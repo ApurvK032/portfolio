@@ -200,8 +200,8 @@
   justify-content: center;
   overflow: hidden;
   box-shadow: var(--shadow-xl);
-  width: 70% !important;    
-  height: 70%
+  width: 40% !important;    
+  height: 4%
 }
 
 .hero-svg {
