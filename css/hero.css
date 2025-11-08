@@ -187,11 +187,7 @@
     grid-template-columns: 1fr;
     gap: var(--space-6);
   }
-
-  .hero-image {
-    order: -1;
-  }
-
+  
   .hero-title {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
   }
