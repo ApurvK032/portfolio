@@ -254,39 +254,29 @@
   box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
 }
 
-.cta-buttons {
+/* Tech Stack in Hero */
+.hero-stack {
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  gap: var(--space-2);
+  margin: var(--space-6) 0 var(--space-8) 0;
+  max-width: 500px;
 }
 
-.btn {
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  display: inline-block;
+.stack-item {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--primary);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  border: 1px solid var(--primary);
+  transition: all var(--transition-base);
 }
 
-.btn-primary {
-  background: #10b981;
+.stack-item:hover {
+  background: var(--primary);
   color: white;
-}
-
-.btn-primary:hover {
-  background: #059669;
   transform: translateY(-2px);
-}
-
-.btn-secondary {
-  background: transparent;
-  color: #10b981;
-  border: 2px solid #10b981;
-}
-
-.btn-secondary:hover {
-  background: #10b981;
-  color: white;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
 }
